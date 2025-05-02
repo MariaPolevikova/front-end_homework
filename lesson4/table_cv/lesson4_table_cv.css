@@ -9,7 +9,7 @@
 }
 
 div {
-    font-family: Verdana; font-style: normal;
+    font-family: "Verdana"; font-style: normal;
     line-height: 1.4;
     font-size: 14px;
 }
@@ -50,13 +50,13 @@ td {
     background: linear-gradient(to right, rgba(228, 210, 185, 0.27) 10%, transparent);
 }
 
-.border-no_color {
-    border: 5px solid rgba(255, 255, 255, 0.11);
-    border-radius: 900px 900px 900px 900px;
-}
+/*.border-no_color {*/
+/*    border: 5px solid rgba(255, 255, 255, 0.11);*/
+/*    border-radius: 900px 900px 900px 900px;*/
+/*}*/
 
-.liner {
-    border: 2px solid rgba(216, 204, 168, 0.38);
-    border-radius: 20px;
-    width: 100px;
-}
+/*.liner {*/
+/*    border: 2px solid rgba(216, 204, 168, 0.38);*/
+/*    border-radius: 20px;*/
+/*    width: 100px;*/
+/*}*/
