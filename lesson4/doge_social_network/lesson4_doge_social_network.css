@@ -1,0 +1,40 @@
+body {
+    background: #0000ff;
+}
+h2 {
+    color: #ff0000;
+}
+
+.backcolor_blue {
+    background: #37d0dd;
+    display: flex;
+}
+
+.backcolor_pink{
+    background: #d867c6;
+    display: flex;
+}
+
+.header_3{
+    color: #970390;
+}
+
+.header_2{
+    color: #37d0dd;
+}
+
+.header_1{
+    color: #d867c6;
+}
+
+.color_yellow{
+    color: #c1dc1c;
+}
+
+li{
+    font-size: 150%;
+}
+
+.font_1{
+    font-family: "New Walt Disney Font", sans-serif;
+}
