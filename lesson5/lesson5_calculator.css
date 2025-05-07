@@ -1,0 +1,99 @@
+td{
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    padding: 5px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    text-align: center;
+    /*border: none;*/
+    border-radius: 5px;
+}
+
+table{
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    color: rgba(0, 0, 0, 0.73);
+}
+
+.border_none{
+    border: none;
+}
+
+.color_red{
+    color: rgba(204, 56, 56, 0.72);
+}
+
+.color_blue{
+    color: rgba(55, 55, 214, 0.76);
+}
+
+.color_pink{
+    color: rgba(193, 60, 192, 0.71);
+}
+
+.color_grey{
+    color: #a8a5a5;
+}
+
+.backcolor_white{
+    background-color: white;
+}
+
+.background_color_gray{
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+}
+
+.width{
+    width: 600px;
+    display: flex;
+}
+
+button{
+    width: 40px;
+    text-align: center;
+}
+
+.button_width{
+    width: 80px;
+}
+
+.center{
+    text-align: center;
+}
+
+.boarders{
+    border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.colspan{
+    colspan: 2;
+}
+
+.background_color_blue{
+    /*background-color: #0404cc;*/
+    /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+.text-left{
+    text-align: left;
+}
+
+.color_white{
+    color: white;
+}
+
+.space_between{
+    padding-left: 450px;
+}
+
+.space_between_small{
+    padding-left: 12px;
+}
+
+.height{
+    height: 18px;
+}
+
+.text-right{
+    text-align: right;
+}
