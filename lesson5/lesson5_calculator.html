@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="lesson5_calculator.css">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+  <table class="background_color_blue">
+    <tr>
+      <td colspan="12" class="color_white text-left border_none">📱Калькулятор
+        <span class="space_between"></span>- ◻ ☓</td>
+    </tr>
+<td>
+  <table class="background_color_gray">
+    <tr>
+      <td colspan="12" class="text-left border_none">
+        <span class="backcolor_white width">
+          <u>П</u>равка<span class="space_between_small"></span>
+          <u>В</u>ид<span class="space_between_small"></span>
+          <u>С</u>правка</span>
+      </td>
+    </tr>
+
+    <tr>
+
+      <td class="border_none" colspan="5"></td>
+      <td colspan="12" class="backcolor_white height text-right">0,</td>
+    </tr>
+
+    <tr>
+      <td colspan="6">
+        <label for="Hex">
+        <input type="radio" id="Hex">Hex</label>
+        <span class="space_between_small"></span>
+
+        <label for="Dec">
+        <input type="radio" id="Dec" checked="checked">Dec</label>
+        <span class="space_between_small"></span>
+
+        <label for="Oct">
+        <input type="radio" id="Oct">Oct</label>
+        <span class="space_between_small"></span>
+
+        <label for="Bin">
+        <input type="radio" id="Bin">Bin</label>
+      </td>
+
+      <td colspan="6">
+        <label for="Degrees">
+          <input type="radio" id="Degrees" checked="checked">Degrees</label>
+        <span class="space_between_small"></span>
+
+        <label for="Radians">
+          <input type="radio" id="Radians">Radians</label>
+        <span class="space_between_small"></span>
+
+        <label for="Gradients">
+          <input type="radio" id="Gradients">Gradients</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="3">
+        <label for="lnv">
+        <input type="checkbox" id="lnv">lnv</label>
+        <span class="space_between_small"></span>
+        <label for="Hyp">
+        <input type="checkbox" id="Hyp">Hyp</label>
+      </td>
+      <td>
+        <td class="boarders"></td>
+      </td>
+<!--      пустое пространство между пустой ячейкой и кнокой backspace-->
+      <td colspan="1" class="border_none"></td>
+      <td colspan="2" class="border_none">
+        <button class="color_red button_width">Backspace</button>
+      </td>
+      <td colspan="2" class="border_none">
+        <button class="color_red button_width">Ce</button>
+      </td>
+      <td colspan="2" class="border_none">
+        <button class="color_red button_width">C</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="border_none">
+        <button class="color_blue">Sta</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">F-E</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">(</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">)</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">MC</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">7</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">8</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">9</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">/</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">Mod</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">And</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="border_none">
+        <button class="color_grey">Ave</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">dms</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">Exp</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">In</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">MR</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">4</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">5</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">6</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">*</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">OR</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">Xor</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="border_none">
+        <button class="color_grey">Sum</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">sin</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">x^y</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">log</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">MS</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">1</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">2</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">3</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">-</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">Lsh</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">Not</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="border_none">
+        <button class="color_grey">s</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">cos</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">x^3</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">n!</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">M+</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">0</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">+/-</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">,</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">+</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">=</button>
+      </td>
+      <td class="border_none">
+        <button class="color_red">Int</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="border_none">
+        <button class="color_grey">Dat</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">tan</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">x^2</button>
+      </td>
+      <td class="border_none">
+        <button class="color_pink">1/x</button>
+      </td>
+      <td class="border_none">
+        <button class="color_blue">pi</button>
+      </td>
+      <td class="border_none">
+        <button class="color_grey">A</button>
+      </td>
+      <td class="border_none">
+        <button class="color_grey">B</button>
+      </td>
+      <td class="border_none">
+        <button class="color_grey">C</button>
+      </td>
+      <td class="border_none">
+        <button class="color_grey">D</button>
+      </td>
+      <td class="border_none">
+        <button class="color_grey">E</button>
+      </td>
+      <td class="border_none">
+        <button class="color_grey">F</button>
+      </td>
+    </tr>
+  </table>
+</td>
+  </table>
+</form>
+
+
+</body>
+</html>
