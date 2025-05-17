@@ -3,7 +3,7 @@ body{
     width: 100%;
 }
 
-.wrapper{
+.header{
     display: grid;
     background-color: yellow;
     padding: 20px;
@@ -14,11 +14,19 @@ body{
 
 }
 
-.wrapper_2 {
+.content {
     grid-template-columns: repeat(3, 1fr);
     display: grid;
     margin-left: -10px;
+}
 
+.footer {
+    display: grid;
+    background-color: yellow;
+    padding: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 20px;
 }
 
 .article{
@@ -46,11 +54,3 @@ body{
     margin-right: -10px;
 }
 
-.wrapper_3 {
-    display: grid;
-    background-color: yellow;
-    padding: 20px;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: 20px;
-}

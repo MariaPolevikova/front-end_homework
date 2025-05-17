@@ -3,7 +3,7 @@ body{
     width: 100%;
 }
 
-.wrapper{
+.header{
     display: flex;
     background-color: yellow;
     padding: 20px;
@@ -14,11 +14,20 @@ body{
 
 }
 
-.wrapper_2 {
+.content {
     flex-direction: row;
     display: flex;
     margin-left: -10px;
 
+}
+
+.footer {
+    display: flex;
+    background-color: yellow;
+    padding: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 20px;
 }
 
 .article{
@@ -46,11 +55,4 @@ body{
     margin-right: -10px;
 }
 
-.wrapper_3 {
-    display: flex;
-    background-color: yellow;
-    padding: 20px;
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: 20px;
-}
+
