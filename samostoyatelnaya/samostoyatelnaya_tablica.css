@@ -1,0 +1,114 @@
+table{
+    width: 100%;
+    display: flex;
+    border-spacing: 10px;
+}
+
+.table{
+    width: 100%;
+    display: flex;
+}
+
+.border_blue{
+    border: 3px solid #4646ae;
+}
+
+.border_green{
+    border: 3px solid #179a17;
+}
+
+.border_red{
+    border: 3px solid #b82323;
+}
+
+.border_violet{
+    border: 3px solid #984a98;
+}
+
+.border_brown{
+    border: 3px solid #a1572d;
+}
+
+.background_color_blue{
+    background: #3d3de6;
+}
+
+.background_color_white{
+    background: #eeeef4;
+}
+
+
+.width_menu{
+    width: 200px;
+    padding-left: 40px;
+}
+
+.width_profile_photo{
+    display: flex;
+    height: 300px;
+}
+
+.width_friends{
+    width: 500px;
+    /*padding-left: 10px;*/
+    /*margin-left: 30px;*/
+    display: flex;
+}
+
+.width_bio{
+    width: 700px;
+    margin-left: 40px;
+}
+
+.width_photo{
+    width: 600px;
+}
+
+.menu_margin_right{
+    margin-right: 20px;
+}
+
+.space_between{
+    padding-left: 850px;
+}
+
+.space_between_small{
+    padding-left: 250px;
+}
+
+.header_text_color{
+    color: white;
+}
+
+.header_padding{
+    padding-bottom: 17px;
+}
+
+/*.header_photo{*/
+/*    align-items: center;*/
+/*}*/
+
+.menu_center{
+    padding-left: 0px;
+}
+
+.text_color{
+    color: blue;
+}
+
+.padding_menu{
+    padding-bottom: 20px;
+}
+
+.friends_margin_bottom{
+    /*margin-bottom: 30px;*/
+    margin-top: -100px;
+}
+
+.text_color_friends{
+    color: gray;
+}
+
+.padding{
+    padding: 10px;
+}
