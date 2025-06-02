@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="lesson10_new_calculator.css">
+  <title>Title</title>
+</head>
+<body>
+<div class="div-flex">
+<form>
+  <header>
+    <tr>
+      <td colspan="12" class="color_white text-left border_none">📱Калькулятор
+        <span class="space_between"></span>- ◻ ☓</td>
+    </tr>
+    <td>
+      <table class="background_color_gray">
+        <tr>
+          <td colspan="12">
+        <span class="">
+          <u>П</u>равка<span class=""></span>
+          <u>В</u>ид<span class=""></span>
+          <u>С</u>правка</span>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td class="td-border-none" colspan="5"></td>
+          <td colspan="12"><span class="display-field">0,</span></td>
+        </tr>
+
+        <tr>
+          <td colspan="6">
+            <label for="Hex">
+              <input type="radio" id="Hex">Hex</label>
+
+            <label for="Dec">
+              <input type="radio" id="Dec" checked="checked">Dec</label>
+
+            <label for="Oct">
+              <input type="radio" id="Oct">Oct</label>
+
+            <label for="Bin">
+              <input type="radio" id="Bin">Bin</label>
+          </td>
+
+          <td colspan="6">
+            <label for="Degrees">
+              <input type="radio" id="Degrees" checked="checked">Degrees</label>
+
+            <label for="Radians">
+              <input type="radio" id="Radians">Radians</label>
+
+            <label for="Gradients">
+              <input type="radio" id="Gradients">Gradients</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <label for="lnv">
+              <input type="checkbox" id="lnv">lnv</label>
+            <span class="space_between_small"></span>
+            <label for="Hyp">
+              <input type="checkbox" id="Hyp">Hyp</label>
+          </td>
+          <td>
+          <td class="boarders"></td>
+    </td>
+
+    <td colspan="1" class="td-border-none"></td>
+    <td colspan="2" class="td-border-none">
+      <button class="text-red">Backspace</button>
+    </td>
+    <td colspan="2" class="td-border-none">
+      <button class="text-red CE-C-padding">Ce</button>
+    </td>
+    <td colspan="2" class="td-border-none">
+      <button class="text-red CE-C-padding">C</button>
+    </td>
+
+
+
+    <tr>
+      <td class="td-border-none">
+        <button class="text-blue">Sta</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">F-E</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">(</button>
+      </td>
+      <td class="td-border_none">
+        <button class="text-pink">)</button>
+      </td>
+      <td class="td-border_none">
+        <button class="text-red">MC</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">7</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">8</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">9</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">/</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">Mod</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">And</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="td-border-none">
+        <button class="text-grey">Ave</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">dms</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">Exp</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">In</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">MR</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">4</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">5</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">6</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">*</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">OR</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">Xor</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="td-border-none">
+        <button class="text-grey">Sum</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">sin</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">x^y</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">log</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">MS</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">1</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">2</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">3</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">-</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">Lsh</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">Not</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="td-border-none">
+        <button class="text-grey">s</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">cos</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">x^3</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">n!</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">M+</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">0</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">+/-</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">,</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">+</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">=</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-red">Int</button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="td-border-none">
+        <button class="text-grey">Dat</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">tan</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">x^2</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-pink">1/x</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-blue">pi</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-grey">A</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-grey">B</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-grey">C</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-grey">D</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-grey">E</button>
+      </td>
+      <td class="td-border-none">
+        <button class="text-grey">F</button>
+      </td>
+    </tr>
+  </header>
+  </td>
+  </table>
+</form>
+
+</div>
+</body>
+</html>
