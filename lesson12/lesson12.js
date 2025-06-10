@@ -2,15 +2,15 @@
 
 const str1 = 'Hello';
 const str2 = 'world';
-console.log(str1.concat(str2));
+console.log(str1.concat('!',' ', str2));
 
 
 
 //2. Заменить пробелы на нижние подчеркивания
 
 const str3 = 'I learn computer science!';
-const arr = str3.split('_');
-console.log(arr);
+const newStr3 = str3.split(' ').join('_');
+console.log(newStr3);
 
 
 
@@ -23,16 +23,27 @@ console.log(str4.length);
 
 //4. Сделать длину строки 10 и забором
 
-const str5 = 'Hello world';
-const str6 = str5[2, 4, 7, 9].toUpperCase();
-console.log(str6);
+let str5 = 'Hello world';
+// разделить буквы
+let str6 = str5.split('');
+str6[0] = str6[0].toUpperCase();
+str6[2] = str6[2].toUpperCase();
+str6[4] = str6[4].toUpperCase();
+str6[6] = str6[6].toUpperCase();
+str6[8] = str6[8].toUpperCase();
+str6[10] = str6[10].toUpperCase();
+// соединить буквы
+str5 = str6.join('');
+console.log(str5);
 
 
 
 //5. В какую четверть часа попадает число min
 
-let min = 13;
-if (min <= 15){
+let min = -10;
+if (min <0){
+    console.log('Please, enter number between 0 and 60 and try again')
+    }else if (min <= 15){
     console.log('First quote')
     }else if (min >15 && min <=30){
         console.log('Second quote')
@@ -42,7 +53,7 @@ if (min <= 15){
         console.log('Fourth quote')
     }else if (min >60){
         console.log('Please, enter number low than 61 and try again')
-}
+    }
 
 
 
@@ -75,7 +86,8 @@ switch (lang) {
 //7. Есть поля name, age. Если имя не задано, то выводить John/Jane Doe
 
 let obj = {name: '', age: 1};
-if (obj.name === '') {
+// проверка есть ли поле и если есть, то пустое ли оно
+if (obj.name === undefined || obj.name === '') {
     console.log('John/Jane Doe')
 }else{
     console.log(obj)
@@ -85,8 +97,8 @@ if (obj.name === '') {
 
 //8. Если введенное имя Jane, то вывести: 'This is Jane. She is 21'
 
-let name = '';
-if (name === 'Jane'){
+let obj1 = {name: 'Jane'};
+if (obj1.name === 'Jane'){
     console.log('This is Jane. She is 21')
 }else{
     console.log(name)
