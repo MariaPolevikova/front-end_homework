@@ -1,0 +1,60 @@
+.div-flex{
+    display: flex;
+}
+
+table{
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    background-color: #EADFDF;
+}
+
+header{
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    background-color: #7171dc;
+}
+
+td{
+    border: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+.td-border-none{
+    border: none;
+}
+
+
+.space_between{
+    margin-right: 75%;
+}
+
+
+.display-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #ffffff;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-pink{
+    color: palevioletred;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-grey{
+    color: grey;
+}
+
+.CE-C-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button{
+    padding-left: 15px;
+    padding-right: 15px;
+}
