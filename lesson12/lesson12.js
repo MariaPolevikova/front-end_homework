@@ -9,7 +9,7 @@ console.log(str1.concat('!',' ', str2));
 //2. Заменить пробелы на нижние подчеркивания
 
 const str3 = 'I learn computer science!';
-const newStr3 = str3.split(' ').join('_');
+const newStr3 = str3.replaceAll(' ', '_');
 console.log(newStr3);
 
 
@@ -23,8 +23,8 @@ console.log(str4.length);
 
 //4. Сделать длину строки 10 и забором
 
-let str5 = 'Hello world';
-// разделить буквы
+let str5 = 'HEllo woRLd'.toLowerCase();
+
 let str6 = str5.split('');
 str6[0] = str6[0].toUpperCase();
 str6[2] = str6[2].toUpperCase();
@@ -87,7 +87,7 @@ switch (lang) {
 
 let obj = {name: '', age: 1};
 // проверка есть ли поле и если есть, то пустое ли оно
-if (obj.name === undefined || obj.name === '') {
+if (obj.name) {
     console.log('John/Jane Doe')
 }else{
     console.log(obj)
