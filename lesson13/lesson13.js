@@ -28,7 +28,7 @@ console.log(massNew);
 let num = 8;
 let factorial = 1;
 
-for (let i = 1; i < num; i++) {
+for (let i = 1; i <= num; i++) {
     factorial = factorial * i;
 }
 console.log(factorial);
@@ -71,11 +71,7 @@ let obj = {
     pets: ['Atman', 'Dune']
 }
 
-let count = 0;
-for (let property in obj){
-    count++;
-}
-
+let count = Object.keys(obj).length;
 console.log(count);
 
 
@@ -92,9 +88,11 @@ const massNameAge = [
     {name: 'Sofia', age: 81},
     {name: 'Olga', age: 32},
 ];
+let massSort = [];
 
 for (let person of massNameAge) {
     if (person.age > 30) {
+        massSort.push(person);
         console.log(person);
     } if (person.age < 30) {
         console.log();
