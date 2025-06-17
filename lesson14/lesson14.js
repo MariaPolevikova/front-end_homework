@@ -4,7 +4,7 @@
 function isPrime(n) {
     for (let i = 2; i <= n/2; i++) {
         if (n % i === 0 || n <=1) {
-            console.log('Число не простое')
+            return false;
         }else{
             console.log('Число простое')
         }
@@ -17,9 +17,9 @@ isPrime(7);
 //2. Функция isPalindrome(str), которая проверяет является ли строка палиндромом
 
 function isPalindrome(str) {
-    for(let i = 2; i <= str.length / 2; i++) {
+    for(let i = 0; i <= str.length / 2; i++) {
         if (str[i] !== str[str.length - 1]) {
-            console.log('Это не палиндром')
+            return false;
         }else{
             console.log('Это палиндром')
         }
@@ -66,32 +66,64 @@ sumRange(9, 3.5)
 // Пример: Если входная строка равна "ШАЛАШ", функция должна вывести в консоль массив ['Л'],
 // поскольку символ "Л" встречается в строке только один раз.
 
-function uniqStr (str){
+
+function uniqStr(str) {
     let massUniqStr = [];
     let lowCase = str.toLowerCase();
 
     for (let i = 0; i < lowCase.length; i++) {
-        if (!massUniqStr.includes(lowCase[i])){
-            massUniqStr.push(lowCase[i]);
+        let char = lowCase[i];
+        if (char < 'a' || char > 'z') continue;
+
+        let isUnique = true;
+        for (let j = 0; j < lowCase.length; j++) {
+            if (i !== j && char === lowCase[j]) {
+                isUnique = false;
+                break;
+            }
+        } if (isUnique) {
+            massUniqStr.push(char);
         }
-    }console.log(massUniqStr);
+    }
+    console.log(massUniqStr);
 }
 
-uniqStr('Street value street');
+uniqStr('Hello World!')
 
 
 //6. Функция принимает целое число, обозначающее длину массива.
 // Заполните этот массив случайными целыми числами от 0 до 100.
-// Выведите в консоль получившийся массив. Затем найдите и выведите в консоль максимальное значение,
+// Выведите в консоль получившийся массив.
+// Затем найдите и выведите в консоль максимальное значение,
 // минимальное значение, сумму всех элементов и среднее арифметическое значение элементов в массиве.
 
-function massLength (arrLength){
-    let massRandom = new Array(arrLength);
 
+function massLength(arrLength) {
+    let massRandom = new Array(arrLength);
     for (let i = 0; i < arrLength; i++) {
-        massRandom[i] = Math.floor(Math.random() * 101)
+        massRandom[i] = Math.floor(Math.random() * 101);
     }
     console.log(massRandom);
+
+    let min = massRandom[0];
+    let max = massRandom[0];
+    let sum = 0;
+
+    for (let i = 0; i < arrLength; i++) {
+        if (massRandom[i] > max) {
+            max = massRandom[i];
+        }
+        if (massRandom[i] < min) {
+            min = massRandom[i];
+        }
+        sum += massRandom[i];
+    }
+    let average = sum / arrLength;
+
+    console.log('Максимальное число:', max);
+    console.log('Минимальное число:', min);
+    console.log('Среднее арифметическое значение:', average);
+    console.log('Сумма всех чисел:', sum);
     return massRandom;
 }
 
@@ -106,7 +138,7 @@ function massFibonacci (n){
     let start = [0, 1];
     for (let i = 2; i <= n; i++) {
         start[i] = start[i-1] + start[i-2];
-    } console.log(start.slice(0, n))
+    } console.log(start)
 }
 
-massFibonacci(20);
+massFibonacci(3);
