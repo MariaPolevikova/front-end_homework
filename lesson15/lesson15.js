@@ -88,17 +88,15 @@ massZero([1, 2, 4, 5, 6, 4, 5, 0, 6, 7]);
 
 
 // 4. Написать функцию, которая принимает массив чисел и выполняет следующие операции:
-// Выполнить сдвиг массива на n элементов вправо. пустые элементы заполнить каким-либо значением
+// Выполнить сдвиг массива на n элементов вправо. Пустые элементы заполнить каким-либо значением
 
-function massRight(arr, n, emptyValue = 0) {
-    if (arr.length === 0) return [];
-
+function massRight(arr, n) {
     let result = [];
     let shift = n % arr.length;
 
     for (let i = 0; i < arr.length; i++) {
         if (i < shift) {
-            result.push(emptyValue);
+            result.push(0);
         } else {
             result.push(arr[i - shift]);
         }
@@ -106,7 +104,8 @@ function massRight(arr, n, emptyValue = 0) {
     console.log(result);
 }
 
-massRight([1, 2, 3, 4, 5], 2, 'hello')
+massRight([11, 1, 1, 2, 3, 4, 5], 2, 'hello')
+
 
 // 5. Написать функцию, которая принимает массив чисел и выполняет следующие операции:
 // Найти максимальное количество подряд идущих одинаковых элементов
